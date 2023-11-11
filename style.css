@@ -1067,6 +1067,9 @@ section {
     .hero {
         height: 700px;
     }
+    .navbar{
+        margin-top: 250px;
+    }
 }
 @media (max-width:780px) {
     section {
