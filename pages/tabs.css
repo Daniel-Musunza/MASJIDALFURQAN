@@ -1,0 +1,15 @@
+.about-content {
+    margin-top: 240px;
+    display:flex ;
+    flex-direction: column;
+}
+.about-content .heading {
+    text-align: center;
+}
+.about-content .about-text {
+    text-align: center;
+}
+.about-content .about-text p{
+    text-transform: none;
+    font-size: 18px;
+}
