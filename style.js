@@ -1,5 +1,5 @@
-let navbar = document.querySelector('.navbar');
-
-document.querySelector('#menu').onclick = () =>{
-    navbar.classList.toggle('active')
-}
+$(document).ready(function(){
+    $("#menu").click(function(){
+        $("#navbar").slideToggle("slow");
+    });
+});
