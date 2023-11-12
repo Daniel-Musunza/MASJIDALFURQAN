@@ -31,7 +31,7 @@ html {
     scroll-behavior: smooth;
     scroll-padding-top: 0px;
     background-image: url(img/bac.jpg);
-    height: 6000px;
+    /* height: 6000px; */
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -42,7 +42,9 @@ section {
 }
 
 /*body*/
-
+body{
+    margin-bottom: -100px!important;
+}
 /*header*/
 .header {
     background-color: rgb(55, 170, 59);
@@ -550,7 +552,8 @@ section {
 
 /*footer*/
 .footer{
-    margin-top: 150px;
+    position: relative;
+   bottom: 10px!important;
     border-top:2px solid var(---light);
 }
 .footer .container{
@@ -1068,7 +1071,7 @@ section {
         height: 700px;
     }
     .navbar{
-        margin-top: 250px;
+        margin-top: 200px!important;
     }
 }
 @media (max-width:780px) {
