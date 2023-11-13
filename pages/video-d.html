@@ -46,42 +46,53 @@
 <body>
     <div class="about-page">
         <div class="about" style="margin-bottom: 0;">
-            <section class="header" id="header">
-                <div class="container" style="display: flex; flex-direction: column;">
-                   <div class="nav1" >
-                    <div style="height: 150px; border-radius: 10px; display: flex; flex-direction: column; text-align: center; background-image: url('../img/nav1.jpg'); background-size: cover; background-position: center;">
-                        <h1>MASJID ALFURQAN OFFICIAL WEBSITE MOMBASA - KENYA</h1>
-                        <h3>الموقع الرسمي لمسجد الفرقان ممباسا - كينيا</h3>
-                    </div>
-                       
-                   </div>
-                    <nav class="nav2">
-                        <div class="navbar" id="navbar">
-                            <div class="link">
-                                <a href="../index.html">Home</a>
-                                <a href="./quran.html">QURAAN</a>
-                                <a href="./tafsiir.html">TAFSIIR</a>
-                                <a href="./duruus.html">DURUUS</a>
-                                <a href="./muxaadarooyin.html">MUXAADAROOYIN</a>
-                                <a href="./suallo.html">SUAALO & JAWAAB</a>
-                                <select name="video" id="video"  onchange="redirectToPage()">
-                                    <option value="#">VIDEOS</option>
-                                    <option value="./video-m.html">Muxaadarooyinka video</option>
-                                    <option value="./video-d.html">Duruusta Muuqaalka</option>
-                                    <option value="./video-q.html">Quran Video</option>
-                                </select>
-                                <a href="./books.html">MAQAALADA</a>
-                                <a href="./nala-soo-xiriir.html">NALA SOO XIRIR</a>
-                                <a href="./about.html">ABOUT US</a>
-                            </div>
-                        </div>
-                        <div class="right" style="color: aliceblue;">
-                            <i class="fi fi-br-menu-burger" id="menu"></i>
-                        </div>
-                    </nav>
-        
+        <!-----------Header Link --------->
+        <section class="header" id="header">
+
+            <div class="container" style="display: flex; flex-direction: column;">
+            <div class="nav1" >
+                <div style="height: 150px; border-radius: 10px; display: flex; flex-direction: column; text-align: center; background-image: url('img/nav1.jpg'); background-size: cover; background-position: center;">
+                    <h1>MASJID ALFURQAN OFFICIAL WEBSITE MOMBASA - KENYA</h1>
+                    <h3>الموقع الرسمي لمسجد الفرقان ممباسا - كينيا</h3>
                 </div>
-            </section>
+                
+            </div>
+                <nav class="nav2">
+                    <div class="navbar" id="navbar">
+                        <div class="link">
+                            <a href="index.html">Home</a>
+                            <a href="./pages/quran.html">QURAN</a>
+                            <a href="./pages/tafsiir.html">TAFSIIR</a>
+                            <a href="./pages/duruus.html">DURUUS</a>
+                            <a href="./pages/muxaadarooyin.html">MUXAADAROOYIN</a>
+
+                            <a href="./pages/suallo.html">SUAALO & JAWAAB</a>
+                            <select name="video" id="video" onchange="redirectToPage()">
+                                <option value="">VIDEOS</option>
+                                <option value="./pages/video-m.html">Muxaadarooyinka video</option>
+                                <option value="./pages/video-d.html">Duruusta Muuqaalka</option>
+                                <option value="./pages/video-q.html">Quran Video</option>
+                            </select>
+                            <a href="./pages/books.html">MAQAALADA</a>
+                            <a href="./pages/nala-soo-xiriir.html">NALA SOO XIRIR</a>
+                            <a href="./pages/about.html">ABOUT US</a>
+                        </div>
+                    </div>
+                    <form action="https://daarulxadiith.com/hoyga" class="searchform" id="searchform" method="get" role="search">
+                        <div style="display: flex;">
+                            <label for="menu-search" class="screen-reader-text"></label>
+                                        <input type="text"  placeholder="Raadi..."  id="menu-search" name="s" value="" style="border:2px #000000!important;">
+                            <button class="fa fa-search" type="submit" id="searchsubmit"></button>
+                        </div>
+                    </form>
+                    <div class="right" >
+                        <i style="color: aliceblue;" class="fi fi-br-menu-burger" id="menu"></i>
+                    </div>
+                </nav>
+
+            </div>
+        </section>
+        <!-----------Header Link --------->
         </div>
         
         <div class="video-m-page">
