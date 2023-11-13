@@ -28,7 +28,7 @@
     height: 0;
 }
 .about-content {
-    margin-top: 100px;
+    margin-top: 250px;
     display:flex ;
     flex-direction: column;
 
@@ -55,7 +55,7 @@
 
 @media screen and (max-width: 1281px){
     .about-content {
-        margin-top: 200px;
+        margin-top: 300px;
     }
     .about-content .about-text p{
         font-size: 18px;
@@ -65,7 +65,7 @@
 
 @media screen and (max-width:549px) and (min-width:380px) {
     .about-content {
-        margin-top: 250px;
+        margin-top: 300px;
     }
     .about-content .about-text p{
         font-size: 18px;
@@ -75,7 +75,7 @@
 
 /* message page */
 .message-page {
-    margin-top: 100px;
+    margin-top: 250px;
     display: flex;
     flex-direction: column;
     padding: 20px;
@@ -156,7 +156,7 @@
 .books-page{
     display: flex;
     flex-direction: column;
-    margin-top: 100px;
+    margin-top: 280px;
 }
 .books-page .heading {
     text-align: center;
@@ -228,7 +228,7 @@
 
 /* video -m css */
 .video-m-page {
-    margin-top: 100px;
+    margin-top: 280px;
 }
 .video-m-page .heading {
     text-align: center;
@@ -289,7 +289,7 @@ justify-content: center;
     }
 }
 
-@media (max-width: 549px) and (min-width: 399px) {
+@media (max-width: 550px) and (min-width: 399px) {
     .video-m-page {
         margin-top: 250px;
     }

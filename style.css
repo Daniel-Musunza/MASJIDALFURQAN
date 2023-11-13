@@ -125,214 +125,100 @@ section {
     display: flex;
     align-items: center;
 }
+.nav2 select{
+    background-color:  rgb(55, 170, 59);
+    color: #fff;
+    font-size: 15px;
+    font-weight: 600;
+    border: none;
+    outline: none;
+}
+.nav2 select option , option:checked {
+    font-size: 15px;
+    color: #fff;
+    font-weight: 600;
+    padding: 0px 15px;
+    padding-top: 45px;
+}
+.nav2 select option:hover {
+    color: greenyellow;
+}
 
 /*header*/
 
 /*hero*/
 .hero {
-    background-image: url(img/hero.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    margin-top: 200px;
+    
     width: 100%;
-    height: 1200px;
+    /* height: 1200px; */
     display: flex;
     align-items: last baseline;
     justify-content: center;
 }
-
-.hero .container img {
+.swipper-details img {
+    width: 100%;
     cursor: pointer;
 }
 
 /*hero*/
 
 /*service*/
-.service{
-    margin-top: 150px;
-}
+
 .service .container{
     display: flex;
     align-items: center;
     justify-content: space-between;
     border-top: 5px solid var(---light);
     border-bottom: 5px solid var(---light);
-    padding: 50px 0px;
+    /* padding: 50px 0px; */
 }
 .service .container .box {
     display: flex;
     align-items: center;
 }
-.service .container .box .cirle{
-    position: relative;
+.service .container  form {
+    width: 300px;
+    
 }
-.service .container .box .cirle .outer{
-    width: 150px;
-    height: 150px;
-    border-radius: 100px;
-    border: 20px solid var(---white);
-    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.164);
-    background-color: transparent;
+.service .container  form input{
+    width: 100%;
+    height: 30px;
+    border-radius: 5px;
 }
-.service .container .box .cirle .inner{
-    width: 150px;
-    height: 150px;
-    border: 20px solid var(---orange);
-    border-radius: 100px;
-    position: absolute;
-    top: 0;
-    clip: rect(0px,80px,150px,0px); 
-}
-.service .container .box .text{
-    margin-left: 20px;
-}
-.service .container .box .text h1{
-    font-size: 30px;
-    font-weight: 700;
-    color: var(---black);
-}
-.service .container .box .text p{
-    font-size: 30px;
-    font-weight: 500;
-    color: var(---gray);
-}
-
-.service .container .box2{
-    display: flex;
-    align-items: center;
-}
-.service .container .box2 .cirle{
-    position: relative;
-}
-.service .container .box2 .cirle .outer{
-    width: 150px;
-    height: 150px;
-    border-radius: 100px;
-    border: 20px solid var(---white);
-    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.164);
-    background-color: transparent;
-}
-.service .container .box2 .cirle .inner{
-    width: 150px;
-    height: 150px;
-    border: 20px solid var(---orange);
-    border-radius: 100px;
-    position: absolute;
-    top: 0;
-    clip: rect(0px,90px,100px,0px);  
-}
-.service .container .box2 .text{
-    margin-left: 20px;
-}
-.service .container .box2 .text h1{
-    font-size: 30px;
-    font-weight: 700;
-    color: var(---black);
-}
-.service .container .box2 .text p{
-    font-size: 30px;
-    font-weight: 500;
-    color: var(---gray);
-}
-
-.service .container .box3{
-    display: flex;
-    align-items: center;
-}
-.service .container .box3 .cirle{
-    position: relative;
-}
-.service .container .box3 .cirle .outer{
-    width: 150px;
-    height: 150px;
-    border-radius: 100px;
-    border: 20px solid var(---white);
-    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.164);
-    background-color: transparent;
-}
-.service .container .box3 .cirle .inner{
-    width: 150px;
-    height: 150px;
-    border: 20px solid var(---orange);
-    border-radius: 100px;
-    position: absolute;
-    top: 0;
-    clip: rect(70px,150px,150px,0px); 
-}
-.service .container .box3 .text{
-    margin-left: 20px;
-}
-.service .container .box3 .text h1{
-    font-size: 30px;
-    font-weight: 700;
-    color: var(---black);
-}
-.service .container .box3 .text p{
-    font-size: 30px;
-    font-weight: 500;
-    color: var(---gray);
-}
-
-.service .container .box4{
-    display: flex;
-    align-items: center;
-}
-.service .container .box4 .cirle{
-    position: relative;
-}
-.service .container .box4 .cirle .outer{
-    width: 150px;
-    height: 150px;
-    border-radius: 100px;
-    border: 20px solid var(---white);
-    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.164);
-    background-color: transparent;
-}
-.service .container .box4 .cirle .inner{
-    width: 150px;
-    height: 150px;
-    border: 20px solid var(---orange);
-    border-radius: 100px;
-    position: absolute;
-    top: 0;  
-}
-.service .container .box4 .text{
-    margin-left: 20px;
-}
-.service .container .box4 .text h1{
-    font-size: 30px;
-    font-weight: 700;
-    color: var(---black);
-}
-.service .container .box4 .text p{
-    font-size: 30px;
-    font-weight: 500;
-    color: var(---gray);
+.service .container  form button{
+    cursor: pointer;
+    width: 30px;
+    padding: 2px;
 }
 /*service*/
 
 /*tour*/
 .tour{
     background-color: transparent;
-    margin-top: 150px;
+    /* margin-top: 150px; */
 }
 .tour .heading{
     text-align: center;
 }
 .tour .heading h1{
-    font-size: 80px;
+    font-size: 40px;
     color: var(---black);
     font-weight: 700;
 }
 .tour .container{
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
     justify-content: space-between;
-    margin-top: 50px;
+    height: fit-content;
+    margin-bottom: 0!important;
 }
 .tour .container .box{
-    width: 490px;
-    height: 900px;
+    width: 300px!important;
+    height: 100px!important;
+    margin: 10px;
+    padding-bottom: 0;
     border-radius: 20px;
     text-align: center;
     background-color: var(---white);
@@ -344,217 +230,54 @@ section {
     align-content: center;
     justify-content: center;
     width: 100%;
+   
 }
-.tour .container .box .text{
-    height: 440px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.tour .container .box .text .data h1{
-    font-size: 50px;
-    color: var(---black);
-    font-weight: 700;
-}
-.tour .container .box .text .data h2{
-    font-size: 25px;
-    color: var(---blue);
-    font-weight: 600;
-}
-.tour .container .box .text .data p{
-    font-size: 16px;
-    color: var(---gray);
-    font-weight: 600;
-    line-height: 30px;
-}
-.tour .container .box .text .data button{
-    width: 200px;
-    height: 80px;
-    background-color: var(---orange);
-    color: var(---white);
-    font-size: 20px;
-    font-weight: 600;
-    border-radius: 10px;
-    cursor: pointer;
-    margin-top: 20px;
-}
-.tour .container .box .text .data button:hover {
-    box-shadow: 0px 15px 30px #da5442d8;
-}
+
 /*tour*/
 
 /*about us*/
-.about{
-    margin-top: 150px;
-}
 .about .container{
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-.about .container img{
-    width: 100%;
+.about .container .panel-grid{
+    position: relative;
+    width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
     border-radius: 40px;
     border: 5px solid var(---white);
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.185);
 }
+.panel-grid .box {
+    width: 45%;
+    margin: 10px;
+    margin-left: 30px;
+
+}
 .about .container .text{
+    position: relative;
+    margin-top: 50px;
     background-color: transparent;
+    width: 25%;
+   
 }
-.about .container .text h1{
-    font-size: 80px;
-    color: var(---black);
-    font-weight: 700;
-    line-height: 100px;
-}
-.about .container .text h2{
-    font-size: 50px;
-    color: var(---blue);
-    font-weight: 700;
-}
-.about .container .text p{
-    font-size: 18px;
-    color: var(---gray);
-    line-height: 40px;
-    margin-top: 10px;
-}
-.about .container .text .button{
-    width: 300px;
-    height: 100px;
-    background-color: var(---orange);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 10px;
-    cursor: pointer;
-    margin-top: 30px;
-}
-.about .container .text .button button{
+iframe {
     width: 100%;
-    height: 100%;
-    font-size: 20px;
-    color: var(---white);
-    background-color: transparent;
-    font-weight: 700;
-    cursor: pointer;
 }
-.about .container .text .button i{
-    background-color: var(---dark);
-    height: 100px;
-    width: 120px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 30px;
-    color: var(---white);
-    border-radius: 10px;
-}
-.about .container .text .button:hover{
-    box-shadow: 0px 15px 30px #da5442d8;
+.text .box{
+    width: 100%;
+    margin: 10px; 
 }
 /*about us*/
 
-/*location*/
-.loc{
-    background-image: url(img/big-bac.jpg);
-    height: 1490px;
-    margin-top: 150px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100%;
-}
-.loc .container{
-    display: flex;
-    justify-content: space-between;
-}
-.loc .container .left-data h2{
-    font-size: 40px;
-    font-weight: 700;
-    color: var(---black);
-}
-.loc .container .left-data h1{
-    font-size: 150px;
-    font-weight: 700;
-    color: var(---black);
-    height: 150px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.loc .container .left-data .star{
-    display: flex;
-    align-items: center;
-}
-.loc .container .left-data .star i{
-    font-size: 20px;
-    color: var(---yellow);
-    font-size: 35px;
-    margin-right: 5px;
-}
-.loc .container .right-data{
-    width: 1000px;
-    height: 1445px;
-    backdrop-filter: blur(60px);
-    border-radius: 20px;
-    border: 5px solid #ffffffa4;
-    box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.295);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.loc .container .right-data .data .box{
-    display: flex;
-    align-items: center;
-}
-.loc .container .right-data .data .box .image img{
-    border: 3px solid #ffffffa4;
-    border-radius: 20px;
-    width: 100%;
-}
-.loc .container .right-data .data .box .text{
-    margin-left: 20px;
-}
-.loc .container .right-data .data .box .text h1{
-    font-size: 50px;
-    font-weight: 700;
-    color: var(---white);
-}
-.loc .container .right-data .data .box .text h5{
-    font-size: 20px;
-    font-weight: 500;
-    color: var(---white);
-}
-.loc .container .right-data .data .box .text p{
-    font-size: 14px;
-    font-weight: 500;
-    color: var(---white);
-    line-height: 30px;
-    margin-top: 10px;
-}
-.loc .container .right-data .data .box .text button{
-    width: 200px;
-    height: 70px;
-    background-color: transparent;
-    color: var(---white);
-    font-size: 16px;
-    font-weight: 600;
-    border-radius: 10px;
-    margin-top: 15px;
-    cursor: pointer;
-}
-.loc .container .right-data .data .box .text button:hover{
-    box-shadow: 0px 15px 30px #da5442d8;
-    background-color: var(---orange);
-}
-.loc .container .right-data .data #box2{
-    margin: 30px 0px;
-}
-/*location*/
 
 /*footer*/
 .footer{
-    margin-top: 150px;
+    position: relative;
+   bottom: 10px!important;
     border-top:2px solid var(---light);
 }
 .footer .container{
@@ -1012,6 +735,16 @@ section {
 }
 
 @media (max-width:936px) {
+    .tour .container .box{
+        width: 100%!important;
+        height: auto!important;
+    }
+    .about .container .text{
+        width: 100%;
+    }
+    .panel-grid{
+        width: 100%!important;
+    }
     .service .container .box .text h1{
         font-size: 30px;
         font-weight: 700;
@@ -1065,14 +798,40 @@ section {
     .service .container .box4{
         margin-top: 30px;
     }
+    .footer .container .link .navbar{
+        padding: 0!important;
+    }
+    .footer .container .link h1{
+        margin: 0!important;
+    }
+}
+@media (min-width:850px) {
+.nav2 form{
+    display: none;
+}
 }
 
 @media (max-width:850px) {
     .hero {
-        height: 700px;
+        margin-top: 90px;
+        /* height: 700px; */
     }
-    .navbar{
-        margin-top: 250px;
+    .service .container  form{
+        display: none;
+    }
+    .nav2 form {
+        width: 300px;
+    }
+    .nav2 form input{
+        padding: 10px;
+        border-radius: 5px;
+    }
+    .nav2 form button{
+        width: 50px;
+        border-radius: 5px;
+    }
+    .nav2 .navbar{
+        margin-top: 200px!important;
     }
 }
 @media (max-width:780px) {
