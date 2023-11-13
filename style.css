@@ -829,6 +829,10 @@ iframe {
     .footer .container .link h1{
         margin: 0!important;
     }
+    .navbar .link {
+        height: 60vh;
+        overflow-y: scroll;
+    }
 }
 @media (min-width:850px) {
 .nav2 form{
