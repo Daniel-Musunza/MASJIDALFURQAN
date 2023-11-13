@@ -31,7 +31,7 @@ html {
     scroll-behavior: smooth;
     scroll-padding-top: 0px;
     background-image: url(img/bac.jpg);
-    height: 6000px;
+    /* height: 6000px; */
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -120,6 +120,10 @@ section {
     cursor: pointer;
     margin-right: 30px;
     display: none;
+}
+.header .container .nav2 {
+    display: flex;
+    align-items: center;
 }
 
 /*header*/

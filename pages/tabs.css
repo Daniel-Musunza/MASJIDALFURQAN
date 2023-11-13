@@ -1,18 +1,296 @@
+
+.nav2 select{
+    background-color:  rgb(55, 170, 59);
+    color: #fff;
+    font-size: 15px;
+    font-weight: 600;
+    border: none;
+    outline: none;
+}
+.nav2 select option , option:checked {
+    font-size: 15px;
+    color: #fff;
+    font-weight: 600;
+    padding: 0px 15px;
+    padding-top: 45px;
+}
+.nav2 select option:hover {
+    color: greenyellow;
+}
+
+  
+
+/* media quries */
+/* about page */
+.about-page {
+    display: flex;
+    flex-direction: column;
+    height: 0;
+}
 .about-content {
-    margin-top: 240px;
+    margin-top: 100px;
     display:flex ;
     flex-direction: column;
+
 }
 .about-content .heading {
     text-align: center;
+}
+.about-content .heading h1 {
+    color: var(---black);
+    font-size: 40px;
 }
 .about-content .about-text {
     text-align: center;
 }
 .about-content .about-text p{
     text-transform: none;
-    font-size: 18px;
+    font-size: 22px;
+    line-height: 6.5vh;
+    font-weight: 300;
 }
 .about{
     margin-bottom: 0;
+}
+
+@media screen and (max-width: 1281px){
+    .about-content {
+        margin-top: 200px;
+    }
+    .about-content .about-text p{
+        font-size: 18px;
+        line-height: 4.5vh;
+    }
+}
+
+@media screen and (max-width:549px) and (min-width:380px) {
+    .about-content {
+        margin-top: 250px;
+    }
+    .about-content .about-text p{
+        font-size: 18px;
+        line-height: 4.5vh;
+    }
+}
+
+/* message page */
+.message-page {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    align-items: center;
+}
+.message-page .form-area {
+    display: flex;
+    flex-direction: column;
+}
+.message-page .form-area form {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    background-color: lightgray;
+    padding: 10px 40px;
+    border-radius: 5px;
+}
+.message-page form label {
+    text-transform: none;
+    margin-bottom: 10px;
+    font-weight: 600;
+    color: var(---black);
+}
+.message-page form input, textarea {
+    border: 1px solid #11aeed;
+    border-radius: 3px;
+    width: 400px;
+    margin-bottom: 10px;
+    padding: 5px;
+}
+.message-page form input{
+    height: 4.5vh;
+}
+.message-page form textarea {
+    resize:vertical;
+    height: 10.5vh;
+}
+.message-page .button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.message-page .button button {
+    background-color: #11aeed;
+    width: 100px;
+    padding: 8px 15px;
+    font-size: 20px;
+    font-weight: 600;
+    color: white;
+    border-radius: 5px;
+}
+.message-page .button button:hover {
+    background-color: #0587bb;
+}
+@media  screen and (min-width: 1280px) and (max-width:1380){
+    .message-page {
+        margin-top: 300px;
+    }
+}
+@media  screen and (max-width: 1280px) {
+    .message-page{
+        margin-top: 200px;
+    }
+    .message-page form input, textarea {
+        width: 300px;
+    }
+}
+@media  screen and (max-width: 550px) {
+    .message-page{
+        margin-top: 240px;
+    }
+}
+
+/* books css */
+
+.books-page{
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+}
+.books-page .heading {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.books-page .heading h1:last-child {
+    color: blue;
+}
+.books-page .books-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    gap: 40px;
+    margin: 0 auto;
+}
+.books-page .books-content .books-card-1 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 70px;
+    align-items: center;
+}
+.books-page .books-content .books-card-2 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 70px;
+    align-items: center;
+}
+.books-page .books-content img {
+    width: 200px;
+    height: 250px;
+}
+@media screen and (max-width: 1050px) {
+    .books-page .books-content .books-card-2,
+    .books-page .books-content .books-card-1{
+        gap: 20px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .books-page .books-content .books-card-2,
+    .books-page .books-content .books-card-1{
+        gap: 10px;
+    }
+    .books-page .books-content{
+        padding: 10px;
+    }
+    .books-page .books-content {
+        gap: 20px;
+    }
+    .books-page .books-content img {
+        width: 150px;
+        height: 250px;
+    }
+}
+@media screen and (max-width: 1280px) {
+    .books-page{
+        margin-top: 200px;
+    }
+}
+
+@media screen and (min-width: 399px) and (max-width: 549px) {
+    .books-page {
+        margin-top: 250px;
+    }
+}
+
+/* video -m css */
+.video-m-page {
+    margin-top: 100px;
+}
+.video-m-page .heading {
+    text-align: center;
+}
+.video-m-page .heading h1 {
+    font-size: 30px;
+}
+.vid-content {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    margin: 0 auto;
+}
+.video-contents {
+    display: flex;
+justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    align-items: center;
+}
+.video-contents-1 , .video-contents-2 {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+.video-card {
+    display: flex;
+    flex-direction: column;
+}
+.video-card .video-header h2 {
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: none;
+    flex-wrap: wrap;
+}
+.video-card .video-header  {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+    word-wrap: break-word;
+    width: 600px;
+}
+.video-area iframe {
+    width: 600px;
+    height: 350px;
+}
+
+@media (max-width: 1280px) {
+    .video-m-page{
+        margin-top: 200px;
+    }
+    .video-area iframe {
+        width: 300px;
+        height: 350px;
+    }
+    .video-card .video-header {
+        width: 300px;
+    }
+}
+
+@media (max-width: 549px) and (min-width: 399px) {
+    .video-m-page {
+        margin-top: 250px;
+    }
 }
