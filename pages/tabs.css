@@ -31,7 +31,8 @@
     margin-top: 250px;
     display:flex ;
     flex-direction: column;
-
+    margin-left:200px ;
+    margin-right:200px ;
 }
 .about-content .heading {
     text-align: center;
@@ -214,6 +215,11 @@
     .books-page .books-content img {
         width: 150px;
         height: 250px;
+    }
+    .about-content {
+        width: 90%;
+        margin-left:10px ;
+        margin-right:10px ;
     }
 }
 @media screen and (max-width: 1280px) {
