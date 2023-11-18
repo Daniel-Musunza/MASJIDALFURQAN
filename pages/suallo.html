@@ -43,6 +43,37 @@
             document.getElementById("video").addEventListener("change", redirectToPage);
           </script>
         <!-----------Aos    link --------->
+        <style>
+            h2 {
+               color: #333;
+               text-align: center;
+           }
+           audio {
+               width: 100%;
+               margin-top: 20px;
+               outline: none;
+               border: 1px solid #ccc;
+               border-radius: 4px;
+           }
+   
+   
+           .audio-list {
+               margin-top: 20px;
+           }
+   
+           .audio-list-item {
+               cursor: pointer;
+               padding: 5px;
+               margin-bottom: 5px;
+               border-radius: 4px;
+               background-color: #ecf0f1;
+               transition: background-color 0.3s ease;
+           }
+   
+           .audio-list-item:hover {
+               background-color: #d5d8dc;
+           }
+         </style>
     </head>
 <body>
     <div class="about-page">
@@ -86,8 +117,61 @@
         </section>
     </div>
    <div class="sallo-page">
-    <div class="siteorigin-widget-tinymce textwidget">
-        <div id="audioigniter-1944" class="audioigniter-root " data-player-type="full" data-tracks-url="https://daarulxadiith.com/hoyga/?audioigniter_playlist_id=1944" data-display-track-no="false" data-reverse-track-order="false" data-display-tracklist-covers="true" data-display-active-cover="true" data-display-artist-names="true" data-display-buy-buttons="true" data-buy-buttons-target="true" data-cycle-tracks="false" data-display-credits="false" data-display-tracklist="true" data-allow-tracklist-toggle="true" data-allow-tracklist-loop="true" data-limit-tracklist-height="false" data-volume="100" data-tracklist-height="185" ></div>
+    <div class="panel-grid" style="display: flex; flex-wrap: wrap;">
+        <div class="box">
+            <h2>Duruusta Cusub</h2>
+            <audio id="audioPlayer" controls>
+                <!-- Default audio source -->
+                <source id="currentAudio" src="../audio/kaviru.mp3" type="audio/mp3">
+            </audio>
+        
+            <div class="audio-list">
+                <div class="audio-list-item" onclick="changeAudio('../audio/kaviru.mp3')">Kaviru Audio</div>
+                <div class="audio-list-item" onclick="changeAudio('audio/another_audio.mp3')">Another Audio</div>
+                <div class="audio-list-item" onclick="changeAudio('audio/kaviru.mp3')">Kaviru Audio</div>
+                <div class="audio-list-item" onclick="changeAudio('audio/another_audio.mp3')">Another Audio</div>
+                <div class="audio-list-item" onclick="changeAudio('audio/kaviru.mp3')">Kaviru Audio</div>
+                <div class="audio-list-item" onclick="changeAudio('audio/another_audio.mp3')">Another Audio</div>
+            </div>
+        </div>
+        <div class="box">
+            <h2>Muxaadarooyina Cusub</h2>
+            <audio id="audioPlayer" controls>
+                <source src="../audio/kaviru.mp3" type="audio/mp3">
+            </audio>
+            <div class="audio-list">
+                <div class="audio-list-item" onclick="changeAudio('../audio/kaviru.mp3')">Kaviru Audio</div>
+                <div class="audio-list-item" onclick="changeAudio('audio/another_audio.mp3')">Another Audio</div>
+                <div class="audio-list-item" onclick="changeAudio('audio/kaviru.mp3')">Kaviru Audio</div>
+                <div class="audio-list-item" onclick="changeAudio('audio/another_audio.mp3')">Another Audio</div>
+                <div class="audio-list-item" onclick="changeAudio('audio/kaviru.mp3')">Kaviru Audio</div>
+                <div class="audio-list-item" onclick="changeAudio('audio/another_audio.mp3')">Another Audio</div>
+            </div>
+        </div>
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                var audio = document.getElementById('audioPlayer');
+                var playPauseBtn = document.getElementById('playPauseBtn');
+        
+                playPauseBtn.addEventListener('click', function () {
+                    if (audio.paused) {
+                        audio.play();
+                        playPauseBtn.innerText = 'Pause';
+                    } else {
+                        audio.pause();
+                        playPauseBtn.innerText = 'Play';
+                    }
+                });
+            });
+        
+            function changeAudio(src) {
+                var audioPlayer = document.getElementById('audioPlayer');
+                var currentAudio = document.getElementById('currentAudio');
+                currentAudio.src = src;
+                audioPlayer.load();
+                audioPlayer.play();
+            }
+        </script>
     </div>
     
    </div>

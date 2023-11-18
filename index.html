@@ -45,6 +45,38 @@
     
         document.getElementById("video").addEventListener("change", redirectToPage);
       </script>
+
+      <style>
+         h2 {
+            color: #333;
+            text-align: center;
+        }
+        audio {
+            width: 100%;
+            margin-top: 20px;
+            outline: none;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+
+        .audio-list {
+            margin-top: 20px;
+        }
+
+        .audio-list-item {
+            cursor: pointer;
+            padding: 5px;
+            margin-bottom: 5px;
+            border-radius: 4px;
+            background-color: #ecf0f1;
+            transition: background-color 0.3s ease;
+        }
+
+        .audio-list-item:hover {
+            background-color: #d5d8dc;
+        }
+      </style>
 </head>
 
 <body>
@@ -184,13 +216,61 @@
         <div class="container">
             <div class="panel-grid">
                 <div class="box">
-                    
-                   
+                    <h2>Duruusta Cusub</h2>
+                    <audio id="audioPlayer" controls>
+                        <!-- Default audio source -->
+                        <source id="currentAudio" src="audio/kaviru.mp3" type="audio/mp3">
+                    </audio>
+                
+                    <div class="audio-list">
+                        <div class="audio-list-item" onclick="changeAudio('audio/kaviru.mp3')">Kaviru Audio</div>
+                        <div class="audio-list-item" onclick="changeAudio('audio/another_audio.mp3')">Another Audio</div>
+                        <div class="audio-list-item" onclick="changeAudio('audio/kaviru.mp3')">Kaviru Audio</div>
+                        <div class="audio-list-item" onclick="changeAudio('audio/another_audio.mp3')">Another Audio</div>
+                        <div class="audio-list-item" onclick="changeAudio('audio/kaviru.mp3')">Kaviru Audio</div>
+                        <div class="audio-list-item" onclick="changeAudio('audio/another_audio.mp3')">Another Audio</div>
+                    </div>
+                    <h4><a href="./pages/suallo.html">Duruusta oo dhan>></a></h4>
                 </div>
                 <div class="box">
-                    
-                   
+                    <h2>Muxaadarooyina Cusub</h2>
+                    <audio id="audioPlayer" controls>
+                        <source src="audio/kaviru.mp3" type="audio/mp3">
+                    </audio>
+                    <div class="audio-list">
+                        <div class="audio-list-item" onclick="changeAudio('audio/kaviru.mp3')">Kaviru Audio</div>
+                        <div class="audio-list-item" onclick="changeAudio('audio/another_audio.mp3')">Another Audio</div>
+                        <div class="audio-list-item" onclick="changeAudio('audio/kaviru.mp3')">Kaviru Audio</div>
+                        <div class="audio-list-item" onclick="changeAudio('audio/another_audio.mp3')">Another Audio</div>
+                        <div class="audio-list-item" onclick="changeAudio('audio/kaviru.mp3')">Kaviru Audio</div>
+                        <div class="audio-list-item" onclick="changeAudio('audio/another_audio.mp3')">Another Audio</div>
+                    </div>
+                    <h4><a href="./pages/suallo.html">Muxaadarooyinka oo dhan>></a></h4>
                 </div>
+                <script>
+                    document.addEventListener('DOMContentLoaded', function () {
+                        var audio = document.getElementById('audioPlayer');
+                        var playPauseBtn = document.getElementById('playPauseBtn');
+                
+                        playPauseBtn.addEventListener('click', function () {
+                            if (audio.paused) {
+                                audio.play();
+                                playPauseBtn.innerText = 'Pause';
+                            } else {
+                                audio.pause();
+                                playPauseBtn.innerText = 'Play';
+                            }
+                        });
+                    });
+                
+                    function changeAudio(src) {
+                        var audioPlayer = document.getElementById('audioPlayer');
+                        var currentAudio = document.getElementById('currentAudio');
+                        currentAudio.src = src;
+                        audioPlayer.load();
+                        audioPlayer.play();
+                    }
+                </script>
             </div>
             
             <div class="text">
@@ -206,24 +286,14 @@
                 <div class="box">
                     <h3>Dersiga 209 Saxiixu Muslim Xadiithka
                         (29-35) كتاب الزكاة ll Sh. Xassaan</h3>
-                    <video class="wp-video-shortcode" id="video-66-1"
-                        preload="metadata" controls="controls">
-                        <source type="video/youtube"
-                            src="https://youtu.be/GS4Taxdljt4?_=1" /><a
-                            href="https://youtu.be/GS4Taxdljt4">https://youtu.be/GS4Taxdljt4</a>
-                    </video>
+                    <iframe src="https://www.youtube.com/embed/GS4Taxdljt4" title="D209 Saxiixu Muslim Xadiithka (29-35) كتاب الزكاة ll Sh. Xassaan" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                  </div>
-                 <div class="box">
+                 <!-- <div class="box">
                     <h3> Dersiga 208 Saxiixu Muslim Xadiithka (24-28) كتاب الزكاة ll Sh. Xassaan</h3>
-                    <video class="wp-video-shortcode" id="video-66-2"
-                        preload="metadata" controls="controls">
-                        <source type="video/youtube"
-                        src="https://youtu.be/hEGKWWj-a9o?_=2" /><a
-                        href="https://youtu.be/hEGKWWj-a9o">https://youtu.be/hEGKWWj-a9o</a>
-                    </video>
+                    <iframe src="https://www.youtube.com/embed/hEGKWWj-a9o" title="D208 Saxiixu Muslim Xadiithka (24-28) كتاب الزكاة ll Sh. Xassaan" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                  </div>
-                
-                <h4> <a href="">Fiidiyowga oo dhan >>></a></h4>
+                 -->
+                <h4> <a href="https://www.youtube.com/@Daarulxadiith22/videos">Fiidiyowga oo dhan >>></a></h4>
                
             </div>
         </div>
