@@ -125,27 +125,27 @@
                 <source id="currentAudio" src="../audio/kaviru.mp3" type="audio/mp3">
             </audio>
         
-            <div class="audio-list">
-                <div class="audio-list-item" onclick="changeAudio('../audio/kaviru.mp3')">Kaviru Audio</div>
-                <div class="audio-list-item" onclick="changeAudio('audio/another_audio.mp3')">Another Audio</div>
-                <div class="audio-list-item" onclick="changeAudio('audio/kaviru.mp3')">Kaviru Audio</div>
-                <div class="audio-list-item" onclick="changeAudio('audio/another_audio.mp3')">Another Audio</div>
-                <div class="audio-list-item" onclick="changeAudio('audio/kaviru.mp3')">Kaviru Audio</div>
-                <div class="audio-list-item" onclick="changeAudio('audio/another_audio.mp3')">Another Audio</div>
-            </div>
+          <div class="audio-list">
+                        <div class="audio-list-item" onclick="changeAudio('audio/kaviru.mp3')">211 Saxiixu Muslim Xadiithka (51-62) كتاب الزكاة ll Sh  Xassaan</div>
+                        <div class="audio-list-item" onclick="changeAudio('audio/another_audio.mp3')">210 Saxiixu Muslim Xadiithka (36-50) كتاب الزكاة ll Sh. Xassaan</div>
+                        <div class="audio-list-item" onclick="changeAudio('audio/kaviru.mp3')">209 Saxiixu Muslim Xadiithka (29-35) كتاب الزكاة ll Sh. Xassaan</div>
+                        <div class="audio-list-item" onclick="changeAudio('audio/another_audio.mp3')">208 Saxiixu Muslim Xadiithka (24-28) كتاب الزكاة ll Sh. Xassaa</div>
+                        <div class="audio-list-item" onclick="changeAudio('audio/kaviru.mp3')">207 Saxiixu Muslim Xadiithka (11-23) كتاب الزكاة ll Sh. Xassaan</div>
+                    
+                    </div>
         </div>
         <div class="box">
             <h2>Muxaadarooyina Cusub</h2>
-            <audio id="audioPlayer" controls>
+            <audio id="audioPlayer2" controls>
                 <source src="../audio/kaviru.mp3" type="audio/mp3">
             </audio>
             <div class="audio-list">
-                <div class="audio-list-item" onclick="changeAudio('../audio/kaviru.mp3')">Kaviru Audio</div>
-                <div class="audio-list-item" onclick="changeAudio('audio/another_audio.mp3')">Another Audio</div>
-                <div class="audio-list-item" onclick="changeAudio('audio/kaviru.mp3')">Kaviru Audio</div>
-                <div class="audio-list-item" onclick="changeAudio('audio/another_audio.mp3')">Another Audio</div>
-                <div class="audio-list-item" onclick="changeAudio('audio/kaviru.mp3')">Kaviru Audio</div>
-                <div class="audio-list-item" onclick="changeAudio('audio/another_audio.mp3')">Another Audio</div>
+                <div class="audio-list-item" onclick="changeAudio2('audio/kaviru.mp3')">Wacdi Kooban Oo Qalbiga Dhaqaajinaaya || Sh. Xassaan</div>
+                <div class="audio-list-item" onclick="changeAudio2('audio/another_audio.mp3')">04 Ka Reebidda Kuwa Dhunsan, Ku Been Abuuradka Kuwa Hanuunsan || Sh. Xassaan</div>
+                <div class="audio-list-item" onclick="changeAudio2('audio/kaviru.mp3')">03 Ka Reebidda Kuwa Dhunsan, Ku Been Abuuradka Kuwa Hanuunsan || Sh. Xassaan</div>
+                <div class="audio-list-item" onclick="changeAudio2('audio/another_audio.mp3')">02 Ka Reebidda Kuwa Dhunsan, Ku Been Abuuradka Kuwa Hanuunsan || Sh. Xassaan</div>
+                <div class="audio-list-item" onclick="changeAudio2('audio/kaviru.mp3')">01 Ka Reebidda Kuwa Dhunsan, Ku Been Abuuradka Kuwa Hanuunsan || Sh. Xassaan</div>
+
             </div>
         </div>
         <script>
@@ -166,6 +166,28 @@
         
             function changeAudio(src) {
                 var audioPlayer = document.getElementById('audioPlayer');
+                var currentAudio = document.getElementById('currentAudio');
+                currentAudio.src = src;
+                audioPlayer.load();
+                audioPlayer.play();
+            }
+            document.addEventListener('DOMContentLoaded', function () {
+                var audio = document.getElementById('audioPlayer2');
+                var playPauseBtn = document.getElementById('playPauseBtn');
+        
+                playPauseBtn.addEventListener('click', function () {
+                    if (audio.paused) {
+                        audio.play();
+                        playPauseBtn.innerText = 'Pause';
+                    } else {
+                        audio.pause();
+                        playPauseBtn.innerText = 'Play';
+                    }
+                });
+            });
+        
+            function changeAudio2(src) {
+                var audioPlayer = document.getElementById('audioPlayer2');
                 var currentAudio = document.getElementById('currentAudio');
                 currentAudio.src = src;
                 audioPlayer.load();
