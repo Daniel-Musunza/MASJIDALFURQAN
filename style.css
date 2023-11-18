@@ -541,7 +541,7 @@ iframe, video {
         width: 100%;
         position: absolute;
         right: 0;
-        top: 12%;
+        top: 250px;
         margin: 0px auto;
         display: none;
         padding: 20px 0px;
@@ -598,24 +598,27 @@ iframe, video {
     .header .container nav .navbar .link a:hover {
         border: 2px solid var(---orange);
     }
-    .hero {
-        height: 800px;
+    .hero 
+    {
+        height: fit-content;
+        margin-top: 270px;
     }
     .service .container{
         flex-wrap: wrap;
     }
     .service{
-        margin-top: 100px;
+        margin-top: 0;
+        margin-bottom: 0;
     }
     .tour .container{
-        display: block;
+        display: flex;
+        flex-wrap: wrap;
     }
     .tour .container .box{
         width: 500px;
-        height: 900px;
         border-radius: 20px;
         text-align: center;
-        margin: 30px auto;
+        margin: 50px auto;
     }
     .tour .container .box img{
         border-radius: 16px 16px 0px 0px;
@@ -657,16 +660,20 @@ iframe, video {
         cursor: pointer;
         margin-top: 20px;
     }
-    .tour{
-        background-color: transparent;
-        margin-top: 100px;
-    }
+   
     .about .container{
+        padding-top: 0!important;
         display: block;
     }
     .about .container .text{
+        width: 100%;
         text-align: center;
+        display: flex;
+        flex-wrap: wrap;
         margin-top: 50px;
+    }
+    .about .container .text .box{
+        width: 45%;
     }
     .about .container .text .button{
         margin: 0px auto;
@@ -676,6 +683,10 @@ iframe, video {
         width: 700px;
         margin: 0px auto;
 
+    }
+    .about .container .panel-grid {
+        position: relative;
+        width: 100%;
     }
     .about .container .text p{
         font-size: 18px;
@@ -763,6 +774,9 @@ iframe, video {
 }
 
 @media (max-width:936px) {
+    .header .container nav .navbar {
+        top: 45px;
+    }
     .tour .container .box{
         width: 100%!important;
         height: auto!important;
@@ -777,6 +791,22 @@ iframe, video {
         width: 100%;
         margin: 10px;
     
+    }
+    .about .container .text{
+        width: 100%;
+        text-align: center;
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 50px;
+    }
+    .about .container .text .box{
+        width: 100%;
+    }
+    .card{
+        width: 45%!important;
+        margin-left: 10px;
+        
+        
     }
     .service .container .box .text h1{
         font-size: 30px;
